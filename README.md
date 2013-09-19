@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 
-#olpuls:
+#olplus for jekyll theme:
   用于yomuse.de的个人博客主题，目前尚未完成，还比较乱。
   更新日志:
     
