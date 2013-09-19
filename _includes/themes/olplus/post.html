@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <meta name="author" content="{{ site.author.name }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}olplus/css/normalize.css"/>
+    <link rel="stylesheet" href="{{ ASSET_PATH }}olplus/css/style.css?ver=0.01"/>
+<!-- <link href='http://fonts.googleapis.com/css?family=Clicker+Script|Raleway|Happy+Monkey' rel='stylesheet'
+          type='text/css'> -->
+    <!--[if lt IE 9]>
+    <script src="script/html5.js"></script><![endif]-->
+</head>
+<body>
+<header>
+    <p class="meta">
+        <img src="{{ ASSET_PATH }}/olplus/img/logo.png" alt="logo"/>
+    </p>
+
+    <h1 class="current"><a href="{{ HOME_PATH }}">Yomuse's<strong>Blog</strong></a></h1>
+    <nav>
+        <div class="slideclick">
+            <ul>
+                <li class="active"><a href="{{ HOME_PATH }}">博客</a></li>
+                <li><a href="#">存档</a></li>
+                <li><a href="#">实验室</a></li>
+                <li><a href="#">印象</a></li>
+                <li><a href="#">关于</a></li>
+            </ul>
+            <div class="navcell"></div>
+        </div>
+    </nav>
+
+    <div id="search-container">
+        <div id="search-main">
+            <form id="searchForm" class="search" action="https://google.com.hk/search" method="get" accept-charset="utf-8">
+                <div class="input">
+                    <input type="search" name="q" id="s" autocomplete="off" autocorrect="off" autocapitalize="off"
+                           maxlength="20" placeholder="Search via Google"/>
+                </div>
+                <input type="hidden" name="q" value="site:yomuse.de">
+            </form>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="meta">
+        <ul class="avatar-effect">
+            <li>
+                <a href="#"><img src="{{ ASSET_PATH }}/olplus/img/avatar.png" alt="yomuse's avatar"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<article>
+    <h1><a href="{{ post.url }}">{{ page.title }}</a>&nbsp;<span class="date-content">{{ page.date | date_to_long_string }} {{ site.author.name }}</span></h1>
+
+    <div class="content">
+      {{ content }}
+    </div>
+      <div>
+          <i class="icon-tag"></i> {% for tag in post.tags %}<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}
+       </div> 
+</article>
+
+<footer>
+    <p class="meta">
+        <img src="{{ ASSET_PATH }}/olplus/img/logo.png" alt="Logo"/>
+    </p>
+
+    <p>&copy; 2013 悠木 &nbsp; Powered by &nbsp; <a href="https://github.com/mojombo/jekyll">jekyll</a> & Theme by &nbsp; <a href="https://github.com/yomuse/yomuse.github.com">OLplus+</a> <br/>
+
+       Made on a MBP by &nbsp; <a href="http://yomuse.de">Yomuse</a>
+    </p>
+</footer>
+
+<script src="{{ ASSET_PATH }}/olplus/script/jquery-2.0.3.min.js"></script>
+<script src="{{ ASSET_PATH }}/olplus/script/test.js"></script>
+<script src="{{ ASSET_PATH }}/olplus/script/jquery.quovolver.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#fw-c .quotes').quovolver();
+
+    });
+</script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33965275-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</body>
+</html>
