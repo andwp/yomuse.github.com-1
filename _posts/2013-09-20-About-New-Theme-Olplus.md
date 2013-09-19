@@ -17,6 +17,8 @@ tags:
 同时为了表达对Orderlist优雅排版的致敬，我想这个主题就叫做olplus(ol stands for Orderlist)吧. 与我现在的设想相比，
 目前应该完成了首页与内容页的50%左右，其它页面随后更新。
 
+由于国内加载GoogleFontAPI比较悲剧，默认我注释掉了之前设定好的字体样式。
+
 推荐使用FF,Chrome,Safari等可以很好支持HTML5的浏览器进行浏览。
 
 BTW，中秋晚上喝了茶，睡不着觉的感觉，谁能懂呀...
