@@ -80,9 +80,12 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
+    # provider : duoshuo
+    # duoshuo :
+    #   short_name : yomuse
     provider : disqus
     disqus :
-      short_name : yomuse
+      short_name : yomuse  
     # livefyre :
     #   site_id : 123
     # intensedebate :
