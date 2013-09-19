@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-# Jekyll-Bootstrap
 
 #olpuls:
   用于yomuse.de的个人博客主题，目前尚未完成，还比较乱。
