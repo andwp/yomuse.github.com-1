@@ -131,6 +131,7 @@
  {% endfor %}
 
  <article>
+ <!-- 临时导航样式 -->
  <div class="pagination">
  <span class="page_number ">第 {{ paginator.page }} 页 / 共 {{ paginator.total_pages }} 页</span>
    {% if paginator.previous_page %}
@@ -147,7 +148,7 @@
   {% else %}
     <span class="next">下一页</span>
   {% endif %}
-  <div class="pagenum">
+<!--   <div class="pagenum">
    <ul>
     <li>
       {% if paginator.page == 1 %}
@@ -167,7 +168,7 @@
       </li>
     {% endfor %}
   </ul>
-  </div>
+  </div> -->
 </div>
 </article>
 
