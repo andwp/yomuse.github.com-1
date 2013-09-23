@@ -65,11 +65,32 @@
       <div>
           <i class="icon-tag"></i> {% for tag in post.tags %}<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}
        </div> 
+       <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_icons_1"></a>
+    <a class="jiathis_button_icons_2"></a>
+    <a class="jiathis_button_icons_3"></a>
+    <a class="jiathis_button_icons_4"></a>
+    <a href="http://www.jiathis.com/share?uid=1654475" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=1654475" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+<!-- <div id="clicki_widget_6417" title=""></div> -->
+<!-- UJian Button BEGIN -->
+<div class="ujian-hook"></div>
+<script type="text/javascript">var ujian_config = {num:6,showType:1,lkrc:0,picSize:84,textHeight:45};</script>
+<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid=1654475"></script>
+<a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
+<!-- UJian Button END -->
 </article>
 <section class="comment">
       {% include JB/comments %}
 </section>
-<!-- <div id="clicki_widget_6417" title=""></div> -->
 <footer>
     <p class="meta">
         <img src="{{ ASSET_PATH }}/olplus/img/logo.png" alt="Logo"/>
