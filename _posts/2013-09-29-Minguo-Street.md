@@ -17,3 +17,6 @@ tags:
 
 再来一杯如何？
 ![One more drink](http://ww2.sinaimg.cn/large/9f15aa73gw1e93jqbodoqg20m80ex7wh.gif)
+
+如烟
+![One more drink](http://ww1.sinaimg.cn/large/9f15aa73gw1e93oa15y1wj20m80etdkc.jpg)
