@@ -20,3 +20,7 @@ tags:
 
 如烟
 ![One more drink](http://ww2.sinaimg.cn/large/9f15aa73gw1e93pknf8kaj20m80eitcd.jpg)
+
+洋货
+![One more drink](http://ww4.sinaimg.cn/large/9f15aa73gw1e93u2r5uluj20m80etq74.jpg)
+
