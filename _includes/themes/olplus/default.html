@@ -135,13 +135,13 @@
         {% if paginator.previous_page == 1 %}
             <a href="/">上一页</a>
         {% else %}
-           <a href="{{ site.baseurl }}/_posts/page{{ paginator.previous_page }}" class="previous">上一页</a>
+           <a href="http://yomuse.de/_posts/page{{ paginator.previous_page }}" class="previous">上一页</a>
         {% endif %}
   {% else %}
     <span class="previous">上一页</span>
   {% endif %}
   {% if paginator.next_page %}
-    <a href="{{ site.baseurl }}/_posts/page{{ paginator.next_page }}" class="next">下一页</a>
+    <a href="http://yomuse.de/_posts/page{{ paginator.next_page }}" class="next">下一页</a>
   {% else %}
     <span class="next">下一页</span>
   {% endif %}
